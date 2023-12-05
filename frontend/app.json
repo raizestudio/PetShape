@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "petshape",
-    "slug": "petshape",
+    "name": "practice",
+    "slug": "practice",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -26,9 +26,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "scheme": "practice-scheme",
     "plugins": [
       "expo-router"
-    ],
-    "scheme": "petshape-scheme"
+    ]
   }
 }
