@@ -20,12 +20,20 @@ class Race(models.Model):
 
   def __str__(self):
     return f"{self.animal} - {self.name}"
+  
 class Pet(models.Model):
   id = models.AutoField(primary_key=True)
+  
   
 
 class PetSettings(models.Model):
   pet = models.OneToOneField(
     Pet, on_delete=models.CASCADE
   )
-  name = models.TextField(max_length=64)
+  name = models.CharField(max_length=64)
+  animal = models.OneToOneField(
+    Animal, on_delete=models.DO_NOTHING
+  )
+  race = models.OneToOneField(
+    Race, on_delete=models.DO_NOTHING
+  )
