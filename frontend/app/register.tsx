@@ -10,7 +10,7 @@ export default function SignIn() {
     <SafeAreaView style={styles.container}>
       <Text
         style={styles.h1}
-      >Connexion</Text>
+      >Créer compte</Text>
       <View
         style={{
           gap: 5,
@@ -21,13 +21,24 @@ export default function SignIn() {
         <TextInput 
           style={styles.input}
           keyboardType='email-address'
-          placeholder='Email/Utilisateur'
+          placeholder='Email'
+        />
+        <TextInput
+          style={styles.input}
+          keyboardType='ascii-capable'
+          placeholder='Utilisateur'
         />
         <TextInput
           style={styles.input}
           keyboardType='ascii-capable'
           secureTextEntry={true}
           placeholder='Mot de passe'
+        />
+        <TextInput
+          style={styles.input}
+          keyboardType='ascii-capable'
+          secureTextEntry={true}
+          placeholder='Mot de passe * 2'
         />
       </View>
       <Pressable
@@ -40,16 +51,6 @@ export default function SignIn() {
         }}
         >
         <Text>Connexion</Text>
-      </Pressable>
-      <Pressable
-        style={{
-          marginTop: 10
-        }}
-        onPress={() => {
-          router.replace('register')
-        }}
-      >
-        <Text>Je n'ai pas de compte</Text>
       </Pressable>
     </SafeAreaView>
   );
