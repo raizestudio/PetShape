@@ -63,15 +63,15 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#292929"
+    backgroundColor: "#eee"
   },
   h1: {
     fontSize: 32,
     fontWeight: "900",
-    color: "#eee"
+    color: "#1f1f1f"
   },
   input: {
-    backgroundColor: "#eee",
+    backgroundColor: "#1f1f1f",
     borderRadius: 5,
     padding: 10
   },
