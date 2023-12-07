@@ -4,6 +4,7 @@
 *.package-lock.json
 *.pyc
 **/migrations
+*.env
 
 # dependencies
 node_modules/
@@ -40,3 +41,4 @@ yarn-error.*
 *.tsbuildinfo
 frontend/package-lock.json
 frontend/.env
+backend/.env
